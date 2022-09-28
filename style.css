@@ -5,13 +5,13 @@
     padding: 0;
 }
 
-header{
+.header{
     min-height: 100vh;
     width: 100%;
     background-image: url(img/background.png);
     background-position: center;
     background-size: cover;
-    position: relative;
+    position:relative;
 }
 
 .Logo {
@@ -23,6 +23,7 @@ li, a{
     font-weight: 500;
     font-size: 16px;
     color: #F89A58;
+    text-decoration: none;
 }
 
 nav {
