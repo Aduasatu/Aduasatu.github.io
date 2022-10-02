@@ -22,7 +22,7 @@ $('#btnmode, #darkmode2').click(function () {
         $('#close').attr('src', 'img/closedark.png');
         $('#menu').attr('src', 'img/menudark.png');
         $('#navlink').css('background-color', '#1F1B24');
-
+        $('#darkmode2').text('Light Mode');
         darkmode = 1;
     } else {
         $('header, main, .main-content').css({ "background-image": "url(img/background.png)" });
@@ -44,21 +44,18 @@ $('#btnmode, #darkmode2').click(function () {
         $('#footer a').css('color', '#26223B');
         $('#close').attr('src', 'img/close.png');
         $('#menu').attr('src', 'img/menu.png');
+        $('#darkmode2').text('Dark Mode');
         darkmode = 0;
     }
 }
 );
 
 $('#menu').click(function () {
-    $('#navlink').animate({
-                width: 'toggle'
-            }).show();
+    $('#navlink').show('slow');
 });
 
 $('#close').click(function () {
-    $('#navlink').animate({
-        width: 'toggle'
-    }).hide();
+    $('#navlink').hide('slow');
 });
 
 $('#teksservice').click(function () {
@@ -69,7 +66,5 @@ $('#teksaboutus').click(function () {
 });
 
 $(document).on('touchstart', function() {
-    $('#navlink').animate({
-        width: 'toggle'
-    }).hide();
+    $('#navlink').hide('slow');
 });
