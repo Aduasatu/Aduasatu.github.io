@@ -8,7 +8,10 @@ $('#btnmode, #darkmode2').click(function () {
         if (window.matchMedia('(max-width: 767px)').matches) {
             $('#navlink').css('background-color', '#1F1B24');
             $('#darkmode2').text('Light Mode');
-        } 
+        }else{
+            $('#navlink').css('background-color', 'transparent');
+            $('#darkmode2').css('display', 'none');
+        }
         alert("Anda Memasuki Dark Mode");
         $('header, main, .main-content').css({ "background-image": "url(img/backgrounddark.png)" });
         $('#logo').attr('src', 'img/logodark.png');
@@ -31,7 +34,10 @@ $('#btnmode, #darkmode2').click(function () {
         if (window.matchMedia('(max-width: 767px)').matches) {
             $('#navlink').css('background-color', '#D0ECF0');
             $('#darkmode2').text('Dark Mode');
-        } 
+        }else{
+            $('#navlink').css('background-color', 'transparent');
+            $('#darkmode2').css('display', 'none');
+        }
         alert("Anda Memasuki Light Mode");
         $('header, main, .main-content').css({ "background-image": "url(img/background.png)" });
         $('#logo').attr('src', 'img/Logo.png');
@@ -52,6 +58,7 @@ $('#btnmode, #darkmode2').click(function () {
         $('#footer a').css('color', '#26223B');
         $('#close').attr('src', 'img/close.png');
         $('#menu').attr('src', 'img/menu.png');
+        
         
         darkmode = 0;
     }
