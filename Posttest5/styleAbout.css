@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/background.png) ;
+    background-position:right center;
+    background-size: cover;
+    position:relative;
+    background-attachment: fixed;
+    
+}
+
+.Logo {
+    max-height: 30px;
+}
+
+button {
+    color: #FFF9F5;
+    padding: 5px 15px;
+    background-color: #F89A58;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+    font-family: "Dosis";
+    font-weight: 700;
+    font-size: 16px;
+}
+
+li, a{
+    font-family: "Dosis";
+    font-weight: 500;
+    font-size: 16px;
+    color: #F89A58;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links ul li a{
+    transition: all 0.3s ease 0;
+}
+
+.nav-links ul li a:hover{
+    color: #83CED5;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.left-content {
+    font-family: 'Dosis';
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.left-content h1 {
+    font-size: 60px;
+    color: #83CED5;
+}
+.left-content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #26223B;
+}
+
+
+.right-content {
+    flex-basis: 40%;
+    position: relative;
+    align-items: center;
+}
+
+.right-content img{
+    max-height: 400px;
+    border-radius: 20px;
+    min-height: 10px;
+}
+
+@media(max-width: 700px) {
+    .nav-links ul {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+    } 
+    .header-content{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .right-content{
+        flex-basis: 100%;
+    }
+    .right-content img{
+        width: 77%;
+    }
+    .left-content{
+        flex-basis: 100%;
+    }
+    .left-content h1{
+        font-size: 45px;
+    }
+    .left-content p{
+        font-size: 16px;
+    }
+
+}
